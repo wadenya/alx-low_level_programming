@@ -15,16 +15,22 @@ int main(void)
 	int i;
 	int t;
 
-	for (i = 48; i < 58; i++)
+	for (i = 48; i <= 58; i++)/* prints i digit*/
 	{
-		for (t = i + 1; t < 58; t++)
+		for (t = i + 1; t <= 58; t++)/* print t digits*/
 		{
-			putchar(i);
-			putchar(t);
+			if (!((i == t) || (t > i)))/*eliminates repitition*/
 
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i);
+				putchar(t);
+
+				if (!(i && t))/*addes comma and space*/
+
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
@@ -32,8 +38,6 @@ int main(void)
 
 
 
-
 	putchar(10);
 
-	return (0);
 }
