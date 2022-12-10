@@ -15,27 +15,25 @@ int main(void)
 	int i;
 	int t;
 
-	for (i = 48; i <= 58; i++)/* prints i digit*/
+	for (i = 48; i < 58; i++)
 	{
-		for (t = i + 1; t <= 58; t++)/* print t digits*/
+		for (t = i + 1; j < 58; j++)
+
 		{
-			if (!((i == t) || (t > i)))/*eliminates repitition*/
+			putchar(i);
+			putchar(t);
+
+			if (!(i && t))/*addes comma and space*/
 
 			{
-				putchar(i);
-				putchar(t);
-
-				if (!(i && t))/*addes comma and space*/
-
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
+
 	}
 
 
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
