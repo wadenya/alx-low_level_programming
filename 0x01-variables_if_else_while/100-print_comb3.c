@@ -18,11 +18,11 @@ int main(void)
 	for (i = 48; i < 58; i++)
 	{
 		for (t = i + 1; t < 58; t++)
-
 		{
 			putchar(i);
 			putchar(t);
 
+			if (i == 57 && t == 57)
 			{
 				putchar(',');
 				putchar(' ');
