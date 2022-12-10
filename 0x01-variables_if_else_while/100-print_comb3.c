@@ -21,12 +21,17 @@ int main(void)
 		{
 			putchar(i);
 			putchar(t);
+
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	{
-		putchar(',');
-		putchar(' ');
-	}
+
+
+
+
 
 	putchar(10);
 
