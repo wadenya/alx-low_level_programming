@@ -25,11 +25,14 @@ int main(void)
 				putchar((y % 10) + '0');
 				putchar((z % 10) + '0');
 
-			if (x == 4 && y == 5 && z == 6)
-			continue;
+				{
+					if (x != 6 && y != 8 && z != 10)
 
-			putchar(',');
-			putchar(' ');
+
+					putchar(',');
+					putchar(' ');
+
+				}
 
 			}
 		}
