@@ -23,6 +23,10 @@ int main(void)
 			putchar(t);
 		}
 	}
+	{
+		putchar(',');
+		putchar(' ');
+	}
 
 	putchar(10);
 
