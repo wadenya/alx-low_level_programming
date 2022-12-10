@@ -23,8 +23,6 @@ int main(void)
 			putchar(i);
 			putchar(t);
 
-			if (!(i && t))/*addes comma and space*/
-
 			{
 				putchar(',');
 				putchar(' ');
