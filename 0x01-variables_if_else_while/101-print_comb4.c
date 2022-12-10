@@ -21,23 +21,23 @@ int main(void)
 		{
 			for (z = y + 1; z < 10; z++)
 			{
-				putchar((x % 10) + '0')
-				putchar((y % 10) + '0')
-				putchar((z % 10) + '0')
+				putchar((x % 10) + '0');
+				putchar((y % 10) + '0');
+				putchar((z % 10) + '0');
 
 			if (x == 4 && y == 5 && z == 6)
 			continue;
 
-			putchar(',')
-			putchar(' ')
+			putchar(',');
+			putchar(' ');
 
 			}
 		}
 	}
 
-	putchar('\n')
+	putchar('\n');
 
-	return (0)
+	return (0);
 }
 
 
