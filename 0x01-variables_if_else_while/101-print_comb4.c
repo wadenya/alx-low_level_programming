@@ -27,6 +27,7 @@ int main(void)
 
 				{
 					if (x != 7 && y != 8 && z != 9)
+						continue;
 
 
 					putchar(',');
@@ -42,5 +43,6 @@ int main(void)
 
 	return (0);
 }
+
 
 
