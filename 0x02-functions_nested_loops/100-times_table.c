@@ -6,6 +6,9 @@
  * print_times_table - prints the n times table, starting with 0
  *
  * @n: Value of the times table to be printed
+ *
+ * Return: void
+ *
  */
 void print_times_table(int n)
 {
@@ -13,6 +16,7 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 		return;
+
 	while (t <= n)
 	{
 		for (p = 0; p <= n; p++)
