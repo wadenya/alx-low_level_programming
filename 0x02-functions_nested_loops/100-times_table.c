@@ -24,7 +24,7 @@ void print_times_table(int n)
 			m = t * p;
 			if (p == 0)
 				_putchar('0' + m);
-			else if (m < 10)
+			else if (m <= 10)
 			{
 				_putchar(' ');
 				_putchar(' ');
