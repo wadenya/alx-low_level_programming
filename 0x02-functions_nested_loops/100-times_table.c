@@ -44,7 +44,7 @@ void print_times_table(int n)
 			}
 			if (p < n)
 			{
-				_putchar(',');
+				printf(", ");
 				_putchar(' ');
 			}
 
