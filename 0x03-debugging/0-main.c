@@ -3,11 +3,11 @@
 
 
 /**
- *  main - tests function that prints positive or negative
- *
+ *main - Test function that prints positive or negative
  *Return: 0
  *
  */
+
 int main(void)
 {
 	int i;
@@ -17,4 +17,3 @@ int main(void)
 
 	return (0);
 }
-
