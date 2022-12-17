@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - print a diagonal line 
- * @n: input var
+ * @n: input variable
  *
  * Return: void
  */
@@ -13,7 +13,7 @@ void print_diagonal(int n)
 
 	if (n <= 0)
 		_putchar('\n');
-	for (y = o; y < n; y++)
+	for (y = 0; y < n; y++)
 	{
 		for (j = 0; j < i; j++)
 		{
