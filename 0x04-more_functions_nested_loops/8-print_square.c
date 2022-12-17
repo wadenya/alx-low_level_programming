@@ -6,6 +6,8 @@
  *
  * Return: void
  */
+
+
 void print_square(int size)
 {
 	int y, j;
