@@ -4,9 +4,10 @@
  *
  * Return: void
  */
+
 int main(void)
 {
-	int y = 100;
+	int y <= 100;
 	int p;
 
 	p = 1;
