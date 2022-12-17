@@ -2,9 +2,7 @@
 
 /**
  * print_diagonal - print a diagonal line 
- * @n: input variable
- *
- * Return: void
+ * @n: number of diagonal to be printed
  */
 
 void print_diagonal(int n)
@@ -13,6 +11,7 @@ void print_diagonal(int n)
 
 	if (n <= 0)
 		_putchar('\n');
+
 	for (y = 0; y < n; y++)
 	{
 		for (j = 0; j < i; j++)
