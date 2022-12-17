@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- *
  * Return: void
  */
-
 int main(void)
 {
 	int y = 100;
@@ -15,12 +13,12 @@ int main(void)
 	{
 	if (p % 3 == 0 && p % 5 == 0)
 	{
-	printf("FizzBuzz");
+	printf("FizzBuzz ");
 	}
 
 	else if (p % 3 == 0)
 	{
-	printf("Fizz");
+	printf("Fizz ");
 	}
 
 	else if (p % 5 == 0)
