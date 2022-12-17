@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
  * main - entry point
  *
@@ -37,6 +35,7 @@ int main(void)
 	{
 	printf("%p ", p);
 	}
+
 	p++;
 
 	}
