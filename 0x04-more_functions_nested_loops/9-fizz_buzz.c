@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - print numbers from 1 to 100 and Fizz Buzz
+ * main - entry point
  *
- *return: Always 0
+ *Return: void
  */
 int main(void)
 {
@@ -17,10 +17,12 @@ int main(void)
 	{
 	printf("FizzBuzz ");
 	}
+
 	else if (p % 3 == 0)
 	{
 	printf("Fizz ");
 	}
+
 	else if (p % 5 == 0)
 	{
 	if (p < y)
@@ -29,6 +31,7 @@ int main(void)
 	else
 	printf("Buzz");
 	}
+
 	else
 	{
 	printf("%p ", p);
