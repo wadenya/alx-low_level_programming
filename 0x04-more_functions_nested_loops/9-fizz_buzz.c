@@ -8,20 +8,34 @@
  */
 int main(void)
 {
+	int y = 100;
 	int p;
 
-	for (p = 1; p <= 100; p++)
+	p = 1;
+	while (p <= y)
 	{
-		if (p % 15 == 0)
-			printf("FizzBuzz");
-		else if (p % 3 == 0)
-			printf("Fizz");
-		else if (p % 5 == 0)
-			printf("Buzz");
-		else
-			printf("%p", p);
-		if (p < 100)
-			printf(" ");
+	if (p % 3 == 0 && p % 5 == 0)
+	{
+	printf("FizzBuzz ");
+	}
+	else if (p % 3 == 0)
+	{
+	printf("Fizz ");
+	}
+	else if (p % 5 == 0)
+	{
+	if (p < y)
+	printf("Buzz ");
+
+	else
+	printf("Buzz");
+	}
+	else
+	{
+	printf("%p ", p);
+	}
+	p++;
+
 	}
 	printf("\n");
 	return (0);
