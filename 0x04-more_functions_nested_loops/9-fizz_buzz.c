@@ -2,9 +2,9 @@
 
 /**
  * main - entry point
+ *
  * Return: void
  */
-
 int main(void)
 {
 	int p;
@@ -16,7 +16,7 @@ int main(void)
 	else if (p % 3 == 0)
 		printf("Fizz");
 	else if (p % 5 == 0)
-		printf("Buzz")
+		printf("Buzz");
 	else
 		printf("%d", p);
 	if (p < 100)
@@ -24,5 +24,4 @@ int main(void)
 	}
 	printf("\n");
 	return (0);
-
 }
