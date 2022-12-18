@@ -9,6 +9,8 @@ int main(void)
 {
 	int p;
 
+	for (p = 1; p <= 100; p++)
+	{
 	if (p % 15 == 0)
 		printf("FizzBuzz");
 	else if (p % 3 == 0)
@@ -19,5 +21,8 @@ int main(void)
 		printf("%d", p);
 	if (q < 100)
 		printf(" ");
+	}
+	printf("\n");
+	return (0);
 
 }
