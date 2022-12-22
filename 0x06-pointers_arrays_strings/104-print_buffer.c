@@ -4,7 +4,7 @@
 /**
  * print_line - print z bytes
  * @w: print buffer
- * @x: print bytes of buffer
+ * @x: print bytes
  * @y: print line
  *
  * Return: void
