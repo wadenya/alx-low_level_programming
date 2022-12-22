@@ -3,10 +3,9 @@
 
 /**
  * print_buffer - prints a buffer 10 bytes at a time
- * @b: string
+ * @b: buffer to be printed
  * @size: a size of buffer
  *
- * Return: void
  */
 void print_buffer(char *b, int size)
 {
@@ -40,11 +39,13 @@ void print_buffer(char *b, int size)
 			else
 				printf(".");
 		}
+
 		if (h >= size)
 			continue;
 
 		printf("\n");
 	}
+
 	if (size <= 0)
 		printf("\n");
 }
