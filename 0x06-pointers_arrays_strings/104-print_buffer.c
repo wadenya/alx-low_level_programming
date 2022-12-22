@@ -34,27 +34,27 @@ void print_line(char *w, int x, int y)
 /**
  * print_buffer - prints a buffer.
  * @b: string
- * @size: a char
+ * @size: a size of buffer
  *
  * Return: void
  */
 void print_buffer(char *b, int size)
 {
-		int h;
+	int h;
 
-		for (h = 0; h <= (size - 1) / 10 && size; h++)
+	for (h = 0; h <= (size - 1) / 10 && size; h++)
+	{
+		printf("%08x: ", h * 10);
+		if (h < size / 10)
 		{
-			printf("%08x: ", h * 10);
-			if (h < size / 10)
-			{
-				print_line(b, 9, h);
-			}
-			else
-			{
-				print_line(b, size % 10 - 1, h);
-			}
-			putchar('\n');
+			print_line(b, 9, h);
 		}
-		if (size == 0)
-			putchar('\n');
+		else
+		{
+			print_line(b, size % 10 - 1, h);
+		}
+		putchar('\n');
+	}
+	if (size == 0)
+		putchar('\n');
 }
