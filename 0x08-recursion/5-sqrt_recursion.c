@@ -11,7 +11,7 @@ int check(int w, int m)
 {
 	if (w * w == m)
 		return (w);
-	if (w * w > b)
+	if (w * w > m)
 		return (-1);
 	return (check(w + 1, m));
 }
@@ -26,5 +26,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (checker(1, n));
+	return (check(1, n));
 }
