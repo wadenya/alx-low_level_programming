@@ -7,7 +7,7 @@
  * @s1: a char
  * @s2: a char
  *
- * Return: void
+ * Return: a pointer to a newly allocated space
  */
 
 char *str_concat(char *s1, char *s2)
