@@ -8,7 +8,7 @@ void create_word(char **, char *, int, int, int);
  * strtow - splits a string into words.
  * @str: a string
  *
- * Return: void
+ * Return: returns a pointer
  */
 char **strtow(char *str)
 {
@@ -26,7 +26,7 @@ char **strtow(char *str)
 		if (y > 0 && str[y] == ' ' && str[y - 1] != ' ')
 		{
 			g = 0;
-			y++;
+			h++;
 		}
 		y++;
 	}
