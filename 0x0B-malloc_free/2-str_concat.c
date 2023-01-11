@@ -9,6 +9,7 @@
  *
  * Return: void
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	int y, r, h1, h2, h;
