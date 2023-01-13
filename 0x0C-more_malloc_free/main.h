@@ -4,9 +4,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
-int errors(void);
-int _strlen(char *s);
-int is_digit(char *s);
+void init(char *str, int l);
+int check_for_digits(char **av);
+char *mul(char n, char *num, int num_index, char *dest, int dest_index);
+void _print(char *str, int l);
 int _putchar(char c);
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
