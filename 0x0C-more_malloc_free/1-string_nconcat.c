@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			;
 	}
 	if (f > n)
-	       f = n;
+		f = n;
 	s = malloc(sizeof(char) * (e + f + 1));
 	if (s == NULL)
 		return (NULL);
