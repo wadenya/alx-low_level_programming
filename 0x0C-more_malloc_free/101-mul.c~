@@ -1,0 +1,41 @@
+#include "main.h"
+#include <stdio.h>  
+#include <stdlib.h>
+
+/**                                                             
+ * is_digit - checks a non-digit char in a string
+ * @c:a char
+ *
+ * Return: void                                                 
+ */
+int is_digit(char *c)
+{
+		int y = 0;
+
+  	while(c[y])
+	{
+		if(c[y] < '0' || c[y] > '9')
+			return (0);
+		y++
+	}
+	return (1);
+}
+
+/**
+ * _strlen - length of a string
+ * @c: a char
+ *
+ * Return: void
+ */
+int _strlen(char *c)
+{
+	int y = 0;
+
+	while(c[y] != '\0')
+	{
+		y++
+	}
+	return (y);
+}
+
+
