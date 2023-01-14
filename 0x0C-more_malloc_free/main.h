@@ -1,13 +1,14 @@
-#define MAIN_H
 #ifndef MAIN_H
+#define MAIN_H
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
+
 void errors(void);
 int _strlen(char *c);
 int is_digit(char *c);
-int main(int argc, char *argc[]);
+int main(int argc, char *argv[]);
 int _putchar(char c);
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);

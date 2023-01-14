@@ -54,7 +54,7 @@ void erros(void)
  *
  * Return: void
  */
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
 	char *c1, *c2;
 	int l1, l2, l, y, k, g1, g2, *r, d = 0;
@@ -77,8 +77,8 @@ int main(int argc, char *argc[])
 		for (l2 = _strlen(c2) - 1; l2 >= 0; l2--)
 		{
 			g2 = c2[l2] - '0';
-			k += r[l1 + l2 + 1] + (d1 * d2);
-			r[l1 + l2 + 1 = k % 10];
+			k += r[l1 + l2 + 1] + (g1 * g2);
+			r[l1 + l2 + 1] = k % 10;
 			k /= 10;
 		}
 		if (k > 0)
