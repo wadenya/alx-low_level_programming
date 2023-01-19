@@ -2,7 +2,7 @@
 
 /**
  * int_index - searches for an integer.
- * @array: a str
+ * @array: a string
  * @size:number of elements in the array array
  * @cmp:  pointer to the function to be used to compare values
  *
@@ -24,4 +24,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 			}
 		}
 	}
+	return (-1);
 }
