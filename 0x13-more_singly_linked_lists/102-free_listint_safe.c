@@ -32,34 +32,34 @@ listint_t **_ch(listint_t **lst, size_t siz, listint_t *new)
 
 /**
  * free_listint_safe - frees a listint_t linked list.
- * @head: dble pntr to the start of the list
+ * @h: dble pntr to the start of the list
  *
  * Return: the number of nodes in the list
  */
-size_t free_listint_safe(listint_t **head)
+size_t free_listint_safe(listint_t **h)
 {
-	size_t i, num = 0;
+	size_t y, num = 0;
 	listint_t **list = NULL;
 	listint_t *next;
 
-	if (head == NULL || *head == NULL)
+	if (h == NULL || *h == NULL)
 		return (num);
-	while (*head != NULL)
+	while (*h != NULL)
 	{
-		for (i = 0; i < num; i++)
+		for (y = 0; y < num; y++)
 		{
-			if (*head == list[i])
+			if (*h == list[y])
 			{
-				*head = NULL;
+				*h = NULL;
 				free(list);
 				return (num);
 			}
 		}
 		num++;
-		list = _ch(list, num, *head);
-		next = (*head)->next;
-		free(*head);
-		*head = next;
+		list = _ch(list, num, *h);
+		next = (*h)->next;
+		free(*h);
+		*h = next;
 	}
 	free(list);
 	return (num);
