@@ -24,7 +24,7 @@ listint_t *find_listint_loop(listint_t *head)
 			break;
 		}
 	}
-	if (srch || !ggl || !ggl->next)
+	if (!srch || !ggl || !ggl->next)
 		return (NULL);
 	while (srch != ggl)
 	{
