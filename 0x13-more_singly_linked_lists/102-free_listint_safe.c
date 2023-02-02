@@ -4,63 +4,37 @@
 #include "lists.h"
 
 /**
- * _ch - changes memory for array of pointers
- * to nodes
- * @lst: the old list to append
- * @siz: size of the new list
- * @new: new node to add to list
- *
- * Return: pointer to the new list
- */
-listint_t **_ch(listint_t **lst, size_t siz, listint_t *new)
-{
-	listint_t **nl;
-	size_t y;
-
-	nl = malloc(siz * sizeof(listint_t *));
-	if (nl == NULL)
-	{
-		free(lst);
-		exit(98);
-	}
-	for (y = 0; y < siz - 1; y++)
-		nl[y] = lst[y];
-	nl[y] = new;
-	free(lst);
-	return (nl);
-}
-
-/**
- * free_listint_safe - frees a listint_t linked list.
+ * free_listint_safe - frees a listint_t list.
  * @h: dble pntr to the start of the list
  *
- * Return: the number of nodes in the list
+ * Return: the size of the list that was free’d
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t y, num = 0;
-	listint_t **list = NULL;
-	listint_t *next;
+	size_t y = 0;
+	int df;
+	listint_t *temp;
 
-	if (h == NULL || *h == NULL)
-		return (num);
-	while (*h != NULL)
+	if (!h || !*h)
+		return (0);
+	while (*h)
 	{
-		for (y = 0; y < num; y++)
+		df = *h - (*h)->next;
+		if (df > 0)
 		{
-			if (*h == list[y])
-			{
-				*h = NULL;
-				free(list);
-				return (num);
-			}
+			temp = (*h)->next;
+			free(*h);
+			*h = temp;
+			y++;
 		}
-		num++;
-		list = _ch(list, num, *h);
-		next = (*h)->next;
-		free(*h);
-		*h = next;
+		else
+		{
+			free(*h);
+			*h = NULL;
+			y++;
+			break;
+		}
 	}
-	free(list);
-	return (num);
+	*h = NULL;
+	return (y);
 }
