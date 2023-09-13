@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
-  * _binary_search - Searches for a value in a sorted array in
+  * _binary_search_ - Searches for a value in a sorted array in
   *                  integers using binary search.
   * @array: A pointer to the first element of the array to search.
   * @lft: The starting index of the [sub]array to search.
@@ -25,7 +25,7 @@ int _binary_search_(int *array, size_t lft, size_t rght, int value)
 			printf("%d, ", array[y]);
 		printf("%d\n", array[y]);
 
-		y = left + (rght - lft) / 2;
+		y = lft + (rght - lft) / 2;
 		if (array[y] == value)
 			return (y);
 		if (array[y] > value)
